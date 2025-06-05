@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Styled Web Page</title>
+
+  <!-- External CSS link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Internal CSS -->
+  <style>
+    body {
+      background-color: #e0f7fa; /* light blue */
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      color: darkblue;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    .box {
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #888;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin-top: 5px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Web Page</h1>
+
+  <!-- Table Section -->
+  <h2>Team Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Role</th>
+    </tr>
+    <tr>
+      <td>Alice</td>
+      <td>Manager</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>Developer</td>
+    </tr>
+  </table>
+
+  <!-- Form Section -->
+  <h2>Contact Us</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" required>
+
+    <label>Email:</label>
+    <input type="email" required>
+
+    <label>Message:</label>
+    <textarea rows="4"></textarea>
+
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Block vs Inline -->
+  <h2>Block vs Inline</h2>
+  <div class="box" style="background-color: lightyellow;">Block Element</div> <!-- inline CSS -->
+  <span class="box" style="display:inline-block; background-color: lightgreen;">Inline Element</span> <!-- inline CSS -->
+
+  <!-- Paragraph with border -->
+  <p style="border: 1px solid red; padding: 10px;">
+    This paragraph has a red border and padding.
+  </p>
+
+</body>
+</html>
